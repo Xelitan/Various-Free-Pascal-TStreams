@@ -28,7 +28,7 @@ type
     function Write(const Buffer; Count: Longint): Longint; override;
     function Seek(const Offset: Int64; Origin: TSeekOrigin): Int64; override;
 
-    property Memory: Pointer read FData;
+    property Memory: PByte read FData;
     property Size: Int64 read FSize;
   end;
 
